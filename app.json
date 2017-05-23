@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/like/like",
+    "pages/near/near",
+    "pages/self/self"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "瞎喵君",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "",
+        "iconPath": "images/bar/index.png",
+        "selectedIconPath": "images/bar/index_select.png"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "text": "",
+        "iconPath": "images/bar/like.png",
+        "selectedIconPath": "images/bar/like_select.png"
+      },
+      {
+        "pagePath": "pages/near/near",
+        "text": "",
+        "iconPath": "images/bar/near.png",
+        "selectedIconPath": "images/bar/near_select.png"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "",
+        "iconPath": "images/bar/self.png",
+        "selectedIconPath": "images/bar/self_select.png"
+      }
+    ]
+  }
+}
