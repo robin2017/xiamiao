@@ -1,0 +1,8 @@
+<view>hello  
+
+<view>{{activityInfo.UID}}</view>
+
+<view>{{activityInfo.act_header}}</view>
+<view>{{activityInfo.act_content}}</view>
+
+ </view>

@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <!--活动列表模版定义 begin-->
 <template name="activity_lists">
-  <view class="items">
+  <view class="items" id="{{UID}}" bindtap="toDetailPage">
     <view class="spaner">
       <view class="img_user">{{UID}}</view>
       <view class="name_user">{{act_time}}</view>
@@ -15,7 +15,6 @@
       <view class="type">{{act_type}}</view>
     </view>
   </view>
-
 </template>
 <!--活动列表模版定义 end-->
 

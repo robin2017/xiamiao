@@ -45,5 +45,17 @@ Page({
     }, this)
 
   },
+  toDetailPage:function(e){
+    console.log("todetailpage");
+    console.log(e.currentTarget.id);
+  
+    var bid = e.currentTarget.id;
+    var app = getApp();
+    app.activityCurrentId = bid;
+    
+    wx.navigateTo({
+      url:'../../pages/activity/activity'
+    });
+  }
 })
 

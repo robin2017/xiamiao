@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/activity/activity",
     "pages/like/like",
     "pages/near/near",
     "pages/self/self"
