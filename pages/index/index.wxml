@@ -1,5 +1,28 @@
 <!--index.wxml-->
-<view class="container">
-index
+<!--活动列表模版定义 begin-->
+<template name="activity_lists">
+  <view class="items">
+    <view class="spaner">
+      <view class="img_user">{{UID}}</view>
+      <view class="name_user">{{act_time}}</view>
+    </view>
+    <view class="content">
+      <view class="title">{{act_header}}</view>
+      <view class="number">{{act_people_num}}</view>
+    </view>
+    <view class="related">
+      <view class="reply">{{act_location}}</view>
+      <view class="type">{{act_type}}</view>
+    </view>
+  </view>
 
+</template>
+<!--活动列表模版定义 end-->
+
+<view class="container">
+  <!--循环输出列表 begin-->
+  <view wx:for="{{activityList}}">
+    <template is="activity_lists" data="{{...item}}" />
+  </view>
+  <!--循环输出列表 end-->
 </view>
