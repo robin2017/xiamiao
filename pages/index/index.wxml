@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <!--活动列表模版定义 begin-->
 <template name="activity_lists">
+
   <view class="items">
     <view class="spaner">
       <view class="img_user">{{UID}}</view>
