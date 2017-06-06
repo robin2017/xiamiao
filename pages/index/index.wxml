@@ -2,44 +2,28 @@
 <!--活动列表模版定义 begin-->
 <template name="activity_lists">
 
-  <view class="topic-item">
-   <image class="member-avatar" src="{{item.member.avatar_normal}}" background-size="cover"></image>
-    <view class="topic-info">
-       <view class="topic-inner">
-              <view class="topic-left">
-                   <view class="topic-title"><text>{{act_header}}</text></view>
-                      
-                      <view>
-                          <view class="reply">{{act_location}}</view>
-                          <view class="node-name">{{act_type}}</view>
-                          <view class="member-nickname">{{UID}}用户编号</view>
-                          <!--<view class="name_user">{{act_time}}</view>-->
-                        
-                    </view>
-                    
-              </view> 
-                      <view class="number">{{act_people_num}}参加人数</view>
-                     <view class="reply-num">回复数</view>
-                  
-            </view>
-
-
-
-          
-        </view>
-
-   
+  <view class="items">
+    <view class="spaner">
+      <view class="img_user">{{UID}}</view>
+      <view class="name_user">{{act_time}}</view>
+    </view>
+    <view class="content">
+      <view class="title">{{act_header}}</view>
+      <view class="number">{{act_people_num}}</view>
+    </view>
+    <view class="related">
+      <view class="reply">{{act_location}}</view>
+      <view class="type">{{act_type}}</view>
+    </view>
   </view>
 
 </template>
 <!--活动列表模版定义 end-->
 
 <view class="container">
-  <view class="topic-main">
   <!--循环输出列表 begin-->
-       <view wx:for="{{activityList}}">
-          <template is="activity_lists" data="{{...item}}" />
-       </view>
+  <view wx:for="{{activityList}}">
+    <template is="activity_lists" data="{{...item}}" />
+  </view>
   <!--循环输出列表 end-->
-   </view>
 </view>
